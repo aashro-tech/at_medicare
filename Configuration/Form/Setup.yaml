@@ -1,0 +1,20 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedExtensionPaths:
+          110: EXT:at_medicare/Resources/Private/Forms/
+        allowSaveToExtensionPaths: true
+        allowDeleteFromExtensionPaths: true
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                templateRootPaths:
+                  20: 'EXT:at_medicare/Resources/Private/Extensions/Form/Templates/'
+                partialRootPaths:
+                  20: 'EXT:at_medicare/Resources/Private/Extensions/Form/Partials/'
+                translation:
+                  translationFile:
+                    110: 'EXT:at_medicare/Resources/Private/Language/locallang.xlf'

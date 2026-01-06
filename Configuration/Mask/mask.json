@@ -1,0 +1,1002 @@
+{
+    "version": "8.1.0",
+    "restructuringDone": false,
+    "tables": {
+        "pages": {
+            "elements": {
+                "2_columns": {
+                    "color": "",
+                    "colorOverlay": "",
+                    "columns": [
+                        "tx_mask_temptxt"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "2_columns",
+                    "label": "",
+                    "labels": [
+                        "Temptext"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                }
+            },
+            "sql": {
+                "tx_mask_temptxt": {
+                    "pages": {
+                        "tx_mask_temptxt": "mediumtext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_temptxt": {
+                    "config": {
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_temptxt",
+                    "key": "temptxt",
+                    "type": "text"
+                }
+            }
+        },
+        "tt_content": {
+            "elements": {
+                "footer_element1": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_title",
+                        "tx_mask_repeat"
+                    ],
+                    "description": "Footer availability",
+                    "descriptions": [
+                        "Header about time period",
+                        "Select date and time"
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "footer_element1",
+                    "label": "Footer_availability",
+                    "labels": [
+                        "Header",
+                        "Date & Time"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "footer_element2": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_footer2_element"
+                    ],
+                    "description": "Footer address",
+                    "descriptions": [
+                        "Describe the address of clinic"
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "footer_element2",
+                    "label": "Footer_address",
+                    "labels": [
+                        "Address"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 4
+                },
+                "footer_element3": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "tx_mask_smrpt"
+                    ],
+                    "columnsOverride": {
+                        "header": {
+                            "config": {
+                                "required": 1
+                            },
+                            "fullKey": "header",
+                            "key": "header",
+                            "type": "string"
+                        }
+                    },
+                    "description": "Footer socials",
+                    "descriptions": [
+                        "Heading for social media section",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "footer_element3",
+                    "label": "Footer_socials",
+                    "labels": [
+                        "Heading",
+                        "Social Media Repeat"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 5
+                },
+                "footer_element4": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_footer4_copyright"
+                    ],
+                    "description": "Footer copyright",
+                    "descriptions": [
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "footer_element4",
+                    "label": "Footer_copyright",
+                    "labels": [
+                        "Copyrite"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 6
+                },
+                "image_slider": {
+                    "color": "#e31cc8",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "image",
+                        "tx_mask_hero_text",
+                        "tx_mask_textanimation",
+                        "tx_mask_desc",
+                        "tx_mask_2a7175a071c4",
+                        "tx_mask_phno"
+                    ],
+                    "columnsOverride": {
+                        "image": {
+                            "config": {
+                                "appearance": {
+                                    "elementBrowserEnabled": 1,
+                                    "enabledControls": {
+                                        "delete": 1,
+                                        "dragdrop": 1,
+                                        "hide": 1,
+                                        "info": 1,
+                                        "localize": 1,
+                                        "sort": 0
+                                    },
+                                    "fileUploadAllowed": 1,
+                                    "useSortable": 1
+                                },
+                                "minitems": "1"
+                            },
+                            "fullKey": "image",
+                            "imageoverlayPalette": 1,
+                            "key": "image",
+                            "type": "file"
+                        }
+                    },
+                    "description": "full size Image slider with text",
+                    "descriptions": [
+                        "",
+                        "Simple text at bottom-right corner",
+                        "Animated text that changes frequently",
+                        "Detail description at the bottom-right corner",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "image_slider",
+                    "label": "Hero section ",
+                    "labels": [
+                        "Slider images",
+                        "Simple text",
+                        "Animated text",
+                        "Description",
+                        "Palette",
+                        "Contact no"
+                    ],
+                    "shortLabel": "Hero section ",
+                    "sorting": 0
+                },
+                "information": {
+                    "color": "#34d4ed",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_info_desc",
+                        "tx_mask_info_time_period",
+                        "image"
+                    ],
+                    "columnsOverride": {
+                        "image": {
+                            "config": {
+                                "appearance": {
+                                    "elementBrowserEnabled": 1,
+                                    "enabledControls": {
+                                        "delete": 1,
+                                        "dragdrop": 1,
+                                        "hide": 1,
+                                        "info": 1,
+                                        "localize": 1,
+                                        "sort": 0
+                                    },
+                                    "fileUploadAllowed": 1,
+                                    "useSortable": 1
+                                },
+                                "minitems": "1"
+                            },
+                            "fullKey": "image",
+                            "imageoverlayPalette": 1,
+                            "key": "image",
+                            "type": "file"
+                        }
+                    },
+                    "description": "Information",
+                    "descriptions": [
+                        "Describe about the doctor",
+                        "Specified time period",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "information",
+                    "label": "Information",
+                    "labels": [
+                        "Details",
+                        "Time period",
+                        "Gallery"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "testimonials_section": {
+                    "color": "#f54f4f",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "tx_mask_testimonial"
+                    ],
+                    "columnsOverride": {
+                        "header": {
+                            "config": {
+                                "required": 1
+                            },
+                            "fullKey": "header",
+                            "key": "header",
+                            "type": "string"
+                        }
+                    },
+                    "description": "Testimonial Section",
+                    "descriptions": [
+                        "",
+                        "First name as Image title and Last name as Image description"
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "testimonials_section",
+                    "label": "Testimonials Section",
+                    "labels": [
+                        "Testimonial Heading",
+                        "Testimonial Content"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 2
+                },
+                "timeline": {
+                    "color": "#4082e6",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "tx_mask_rptcontent"
+                    ],
+                    "columnsOverride": {
+                        "header": {
+                            "config": {
+                                "required": 1
+                            },
+                            "fullKey": "header",
+                            "key": "header",
+                            "type": "string"
+                        }
+                    },
+                    "description": "Timeline Section",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "timeline",
+                    "label": "Timeline",
+                    "labels": [
+                        "Heading",
+                        "Content"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 1
+                }
+            },
+            "palettes": {
+                "tx_mask_2a7175a071c4": {
+                    "description": "",
+                    "label": "Palette",
+                    "showitem": [
+                        "tx_mask_linklabel",
+                        "tx_mask_url"
+                    ]
+                }
+            },
+            "sql": {
+                "tx_mask_desc": {
+                    "tt_content": {
+                        "tx_mask_desc": "mediumtext"
+                    }
+                },
+                "tx_mask_footer2_element": {
+                    "tt_content": {
+                        "tx_mask_footer2_element": "mediumtext"
+                    }
+                },
+                "tx_mask_footer4_copyright": {
+                    "tt_content": {
+                        "tx_mask_footer4_copyright": "mediumtext"
+                    }
+                },
+                "tx_mask_hero_text": {
+                    "tt_content": {
+                        "tx_mask_hero_text": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_info_desc": {
+                    "tt_content": {
+                        "tx_mask_info_desc": "mediumtext"
+                    }
+                },
+                "tx_mask_info_time_period": {
+                    "tt_content": {
+                        "tx_mask_info_time_period": "mediumtext"
+                    }
+                },
+                "tx_mask_linklabel": {
+                    "tt_content": {
+                        "tx_mask_linklabel": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_phno": {
+                    "tt_content": {
+                        "tx_mask_phno": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_repeat": {
+                    "tt_content": {
+                        "tx_mask_repeat": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_rptcontent": {
+                    "tt_content": {
+                        "tx_mask_rptcontent": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_smrpt": {
+                    "tt_content": {
+                        "tx_mask_smrpt": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_testimonial": {
+                    "tt_content": {
+                        "tx_mask_testimonial": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_textanimation": {
+                    "tt_content": {
+                        "tx_mask_textanimation": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_title": {
+                    "tt_content": {
+                        "tx_mask_title": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_url": {
+                    "tt_content": {
+                        "tx_mask_url": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "header": {
+                    "coreField": 1,
+                    "fullKey": "header",
+                    "key": "header",
+                    "type": "string"
+                },
+                "image": {
+                    "coreField": 1,
+                    "fullKey": "image",
+                    "imageoverlayPalette": 1,
+                    "key": "image",
+                    "type": "file"
+                },
+                "tx_mask_2a7175a071c4": {
+                    "config": {
+                        "type": "palette"
+                    },
+                    "fullKey": "tx_mask_2a7175a071c4",
+                    "key": "2a7175a071c4",
+                    "type": "palette"
+                },
+                "tx_mask_desc": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 0,
+                        "richtextConfiguration": "full",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_desc",
+                    "key": "desc",
+                    "type": "richtext"
+                },
+                "tx_mask_footer2_element": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 1,
+                        "richtextConfiguration": "full",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_footer2_element",
+                    "key": "footer2_element",
+                    "type": "richtext"
+                },
+                "tx_mask_footer4_copyright": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 1,
+                        "richtextConfiguration": "full",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_footer4_copyright",
+                    "key": "footer4_copyright",
+                    "type": "richtext"
+                },
+                "tx_mask_hero_text": {
+                    "config": {
+                        "nullable": 0,
+                        "required": 1,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_hero_text",
+                    "key": "hero_text",
+                    "type": "string"
+                },
+                "tx_mask_info_desc": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 1,
+                        "richtextConfiguration": "full",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_info_desc",
+                    "key": "info_desc",
+                    "type": "richtext"
+                },
+                "tx_mask_info_time_period": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "richtextConfiguration": "full",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_info_time_period",
+                    "key": "info_time_period",
+                    "type": "richtext"
+                },
+                "tx_mask_linklabel": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "description": {
+                        "image_slider": ""
+                    },
+                    "fullKey": "tx_mask_linklabel",
+                    "inPalette": 1,
+                    "inlineParent": {
+                        "image_slider": "tx_mask_2a7175a071c4"
+                    },
+                    "key": "linklabel",
+                    "label": {
+                        "image_slider": "Link label"
+                    },
+                    "order": {
+                        "image_slider": 1
+                    },
+                    "type": "string"
+                },
+                "tx_mask_phno": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_phno",
+                    "key": "phno",
+                    "type": "string"
+                },
+                "tx_mask_repeat": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_repeat",
+                    "key": "repeat",
+                    "type": "inline"
+                },
+                "tx_mask_rptcontent": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_rptcontent",
+                    "key": "rptcontent",
+                    "type": "inline"
+                },
+                "tx_mask_smrpt": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_smrpt",
+                    "key": "smrpt",
+                    "type": "inline"
+                },
+                "tx_mask_testimonial": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_testimonial",
+                    "key": "testimonial",
+                    "type": "inline"
+                },
+                "tx_mask_textanimation": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_textanimation",
+                    "key": "textanimation",
+                    "type": "inline"
+                },
+                "tx_mask_title": {
+                    "config": {
+                        "nullable": 0,
+                        "required": 1,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_title",
+                    "key": "title",
+                    "type": "string"
+                },
+                "tx_mask_url": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "link"
+                    },
+                    "description": {
+                        "image_slider": ""
+                    },
+                    "fullKey": "tx_mask_url",
+                    "inPalette": 1,
+                    "inlineParent": {
+                        "image_slider": "tx_mask_2a7175a071c4"
+                    },
+                    "key": "url",
+                    "label": {
+                        "image_slider": "Link"
+                    },
+                    "order": {
+                        "image_slider": 2
+                    },
+                    "type": "link"
+                }
+            }
+        },
+        "tx_mask_repeat": {
+            "sql": {
+                "tx_mask_footer_days": {
+                    "tx_mask_repeat": {
+                        "tx_mask_footer_days": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_footer_time": {
+                    "tx_mask_repeat": {
+                        "tx_mask_footer_time": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_footer_days": {
+                    "config": {
+                        "nullable": 0,
+                        "required": 1,
+                        "type": "input"
+                    },
+                    "description": "Enter days according to availability",
+                    "fullKey": "tx_mask_footer_days",
+                    "inlineParent": "tx_mask_repeat",
+                    "key": "footer_days",
+                    "label": "Days",
+                    "order": 1,
+                    "type": "string"
+                },
+                "tx_mask_footer_time": {
+                    "config": {
+                        "nullable": 0,
+                        "required": 1,
+                        "type": "input"
+                    },
+                    "description": "Enter times according to availability",
+                    "fullKey": "tx_mask_footer_time",
+                    "inlineParent": "tx_mask_repeat",
+                    "key": "footer_time",
+                    "label": "Times",
+                    "order": 2,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_rptcontent": {
+            "sql": {
+                "tx_mask_timeline_date": {
+                    "tx_mask_rptcontent": {
+                        "tx_mask_timeline_date": "date"
+                    }
+                },
+                "tx_mask_timeline_details": {
+                    "tx_mask_rptcontent": {
+                        "tx_mask_timeline_details": "mediumtext"
+                    }
+                },
+                "tx_mask_timeline_icon": {
+                    "tx_mask_rptcontent": {
+                        "tx_mask_timeline_icon": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_timeline_date": {
+                    "config": {
+                        "dbType": "date",
+                        "format": "date",
+                        "nullable": 0,
+                        "range": {
+                            "upper": "31-12-2025"
+                        },
+                        "required": 0,
+                        "type": "datetime"
+                    },
+                    "fullKey": "tx_mask_timeline_date",
+                    "inlineParent": "tx_mask_rptcontent",
+                    "key": "timeline_date",
+                    "label": "Date",
+                    "order": 3,
+                    "type": "date"
+                },
+                "tx_mask_timeline_details": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 1,
+                        "richtextConfiguration": "full",
+                        "type": "text"
+                    },
+                    "description": "Timeline heading and description",
+                    "fullKey": "tx_mask_timeline_details",
+                    "inlineParent": "tx_mask_rptcontent",
+                    "key": "timeline_details",
+                    "label": "Timeline Details",
+                    "order": 1,
+                    "type": "richtext"
+                },
+                "tx_mask_timeline_icon": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "description": "Timeline description icon",
+                    "fullKey": "tx_mask_timeline_icon",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_rptcontent",
+                    "key": "timeline_icon",
+                    "label": "Icon",
+                    "order": 2,
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_smrpt": {
+            "sql": {
+                "tx_mask_footer3_icon": {
+                    "tx_mask_smrpt": {
+                        "tx_mask_footer3_icon": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_footer3_icon": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_footer3_icon",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_smrpt",
+                    "key": "footer3_icon",
+                    "label": "Social media Icons",
+                    "order": 1,
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_testimonial": {
+            "sql": {
+                "tx_mask_image": {
+                    "tx_mask_testimonial": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_review": {
+                    "tx_mask_testimonial": {
+                        "tx_mask_review": "mediumtext"
+                    }
+                },
+                "tx_mask_stars": {
+                    "tx_mask_testimonial": {
+                        "tx_mask_stars": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_image": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "description": "Enter the patient\u2019s name in the image title and the surname in the image description (caption).",
+                    "fullKey": "tx_mask_image",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_testimonial",
+                    "key": "image",
+                    "label": "Patient's image",
+                    "order": 3,
+                    "type": "file"
+                },
+                "tx_mask_review": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 1,
+                        "richtextConfiguration": "full",
+                        "type": "text"
+                    },
+                    "description": "Detail reviews by patients",
+                    "fullKey": "tx_mask_review",
+                    "inlineParent": "tx_mask_testimonial",
+                    "key": "review",
+                    "label": "Reviews",
+                    "order": 2,
+                    "type": "richtext"
+                },
+                "tx_mask_stars": {
+                    "config": {
+                        "fieldWizard": {
+                            "selectIcons": {
+                                "disabled": 1
+                            }
+                        },
+                        "items": [
+                            {
+                                "description": "",
+                                "group": "",
+                                "icon": "",
+                                "label": "1",
+                                "value": "1"
+                            },
+                            {
+                                "description": "",
+                                "group": "",
+                                "icon": "",
+                                "label": "2",
+                                "value": "2"
+                            },
+                            {
+                                "description": "",
+                                "group": "",
+                                "icon": "",
+                                "label": "3",
+                                "value": "3"
+                            },
+                            {
+                                "description": "",
+                                "group": "",
+                                "icon": "",
+                                "label": "4",
+                                "value": "4"
+                            },
+                            {
+                                "description": "",
+                                "group": "",
+                                "icon": "",
+                                "label": "5",
+                                "value": "5"
+                            }
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
+                    },
+                    "description": "Select rates for our services",
+                    "fullKey": "tx_mask_stars",
+                    "inlineParent": "tx_mask_testimonial",
+                    "key": "stars",
+                    "label": "Stars",
+                    "order": 1,
+                    "type": "select"
+                }
+            }
+        },
+        "tx_mask_textanimation": {
+            "sql": {
+                "tx_mask_animatedtext": {
+                    "tx_mask_textanimation": {
+                        "tx_mask_animatedtext": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_animatedtext": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_animatedtext",
+                    "inlineParent": "tx_mask_textanimation",
+                    "key": "animatedtext",
+                    "label": "Text",
+                    "order": 1,
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<f:if condition="{data.tx_mask_title}">
+    <h5 class="mb-lg-4 mb-3">{data.tx_mask_title}</h5>
+</f:if>
+<f:if condition="{data.tx_mask_repeat}">
+    <ul class="list-group list-group-flush">
+        <f:for each="{data.tx_mask_repeat}" as="item">
+            <li class="list-group-item d-flex ">
+                <f:if condition="{item.tx_mask_footer_days}">
+                    {item.tx_mask_footer_days}
+                </f:if>
+                <f:if condition="{item.tx_mask_footer_time}">
+                    <span>{item.tx_mask_footer_time}</span>
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

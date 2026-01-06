@@ -1,0 +1,2 @@
+# Includes Page Configuration
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:at_medicare/Configuration/TypoScript/Page" extensions="typoscript">

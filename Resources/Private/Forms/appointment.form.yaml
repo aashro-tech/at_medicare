@@ -1,0 +1,154 @@
+
+renderingOptions:
+  submitButtonLabel: 'Book Now'
+type: Form
+identifier: appointment
+label: 'Book an appointment'
+prototypeName: standard
+finishers:
+  -
+    options:
+      message: 'Your appointment has been successfully scheduled.'
+      messageClass: 'text-center p-4 alert alert-success'
+      contentElementUid: ''
+    identifier: Confirmation
+  -
+    options:
+      subject: 'Example About Email'
+      recipients:
+        khushi.aashro@gmail.com: AASHRO
+      senderAddress: '{email-1}'
+      senderName: '{text-1}'
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: Default
+      useFluidEmail: false
+      title: ''
+    identifier: EmailToReceiver
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: ''
+        properties:
+          elementDescription: ''
+          fluidAdditionalAttributes:
+            placeholder: 'Full Name'
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Please Fill up your Full name !!'
+            -
+              code: 1221560718
+              message: 'Please Fill up your Full name !!'
+            -
+              code: 1347992400
+              message: 'Please Fill up your Full name !!'
+            -
+              code: 1347992453
+              message: 'Please Fill up your Full name !!'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email-1
+        label: ''
+        properties:
+          elementDescription: ''
+          fluidAdditionalAttributes:
+            placeholder: 'Email address'
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Please fill up your Email address !!'
+            -
+              code: 1221560718
+              message: 'Please fill up your Email address !!'
+            -
+              code: 1347992400
+              message: 'Please fill up your Email address !!'
+            -
+              code: 1347992453
+              message: 'Please fill up your Email address !!'
+            -
+              code: 1221559976
+              message: 'Invalid Email format !!'
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Telephone
+        identifier: telephone-1
+        label: ''
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Phone: 123-456-7890'
+      -
+        defaultValue: ''
+        properties:
+          fluidAdditionalAttributes:
+            min: ''
+            max: ''
+            step: 1
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Please fix the appointment date !!'
+            -
+              code: 1221560718
+              message: 'Please fix the appointment date !!'
+            -
+              code: 1347992400
+              message: 'Please fix the appointment date !!'
+            -
+              code: 1347992453
+              message: 'Please fix the appointment date !!'
+        type: Date
+        identifier: date-1
+        label: ''
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: ''
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Additional Message'
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Please give some message to us !!'
+            -
+              code: 1221560718
+              message: 'Please give some message to us !!'
+            -
+              code: 1347992400
+              message: 'Please give some message to us !!'
+            -
+              code: 1347992453
+              message: 'Please give some message to us !!'
+        validators:
+          -
+            identifier: NotEmpty

@@ -1,0 +1,54 @@
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="row">
+            <div clas="col-12">
+
+                <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <f:for each="{data.image}" as="img" iteration="i">
+                            <div class="carousel-item {f:if(condition: i.isFirst, then: 'active')}">
+                                <f:image image="{img}" width="1300" class="img-fluid" />
+                            </div>
+                        </f:for>
+                    </div>
+                </div>
+
+                <f:if condition="{data.tx_mask_hero_text}">
+                    <div class="heroText d-flex flex-column justify-content-center">
+                        <h1 class="mt-auto mb-2">{data.tx_mask_hero_text}
+                            <div class="animated-info">
+                                <f:if condition="{data.tx_mask_textanimation}">
+                                    <f:for each="{data.tx_mask_textanimation}" as="data_item">
+                                        <f:if condition="{data_item.tx_mask_animatedtext}">
+                                            <span class="animated-item">{data_item.tx_mask_animatedtext}</span>
+                                        </f:if>
+                                    </f:for>
+                                </f:if>
+                            </div>
+                        </h1>
+                        <f:if condition="{data.tx_mask_desc}">
+                            <f:format.html>{data.tx_mask_desc}</f:format.html>
+                        </f:if>
+                        <f:if condition="{data.tx_mask_linklabel}">
+                            <div class="heroLinks d-flex flex-wrap align-items-center">
+                                <f:link.typolink parameter="{data.tx_mask_url}" class="custom-link me-4"
+                                    additionalAttributes="{data-hover: data.tx_mask_linklabel}">{data.tx_mask_linklabel}
+                                </f:link.typolink>
+                                <f:if condition="{data.tx_mask_phno}">
+                                    <p class="contact-phone mb-0"><i class="bi-phone"></i>
+                                        <f:variable name="phno"
+                                            value='<f:replace value="{data.tx_mask_phno}" search="-" replace="" />'>
+                                        </f:variable>
+                                        <f:link.typolink parameter="tel:{phno}" class="phone-link"> {data.tx_mask_phno}
+                                        </f:link.typolink>
+                                    </p>
+                                </f:if>
+                            </div>
+                        </f:if>
+                    </div>
+                </f:if>
+
+            </div>
+        </div>
+    </div>
+</section>

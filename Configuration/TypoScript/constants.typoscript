@@ -1,0 +1,31 @@
+########################
+### General Settings ###
+########################
+
+# customsubcategory=200=LLL:EXT:at_medicare/Resources/Private/Language/locallang_db.xlf:constant.category1
+
+at_medicare {
+    website {
+        settings {
+
+            #cat = at_medicare/200/01; type=string; label=Logo title
+            logo_title = 
+
+            #cat = at_medicare/200/02; type=string; label=Subheader
+            Subheader = 
+            
+            #cat = at_medicare/200/03; type=int; label=Main Menu Id
+            main_menu = 1
+            
+            #cat = at_medicare/200/04; type=string; label=Favicon Icon
+            favicon = 
+        }
+
+        # Define paths for templates, layout and partial
+        paths {
+            templateRootPath = EXT:at_medicare/Resources/Private/Templates/
+            layoutRootPath = EXT:at_medicare/Resources/Private/Layouts/
+            partialRootPath = EXT:at_medicare/Resources/Private/Partials/
+        }
+    }
+}

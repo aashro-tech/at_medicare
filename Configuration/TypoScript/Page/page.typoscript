@@ -1,0 +1,146 @@
+########################
+### MAIN PAGE OBJECT ###
+########################
+plugin {
+    at_medicare {
+        settings {
+            logo_title = {$at_medicare.website.settings.logo_title}
+            Subheader = {$at_medicare.website.settings.Subheader}
+        }
+    }
+}
+
+page = PAGE
+page {
+
+    // Set default page typenum
+    typeNum = 0
+
+    // Setup favion
+    shortcutIcon = {$at_medicare.website.settings.favicon}
+
+    meta {
+        viewport = width=device-width, initial-scale=1.0
+    }
+
+    headerData{
+        10 = TEXT
+        10.value = <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    }
+
+    // Initiate all the css-together
+    includeCSS {
+        100 = EXT:at_medicare/Resources/Public/stylesheet/bootstrap.min.css
+        200 = EXT:at_medicare/Resources/Public/stylesheet/bootstrap-icons.css
+        300 = EXT:at_medicare/Resources/Public/stylesheet/owl.carousel.min.css
+        400 = EXT:at_medicare/Resources/Public/stylesheet/owl.theme.default.min.css
+        500 = EXT:at_medicare/Resources/Public/stylesheet/templatemo-medic-care.css
+        800 = EXT:at_medicare/Resources/Public/stylesheet/custom.css
+
+    }
+
+    // Initiate all the js-together
+    includeJSFooter {
+        10 = EXT:at_medicare/Resources/Public/javascript/jquery.min.js
+        20 = EXT:at_medicare/Resources/Public/javascript/bootstrap.bundle.min.js
+        30 = EXT:at_medicare/Resources/Public/javascript/owl.carousel.min.js
+        40 = EXT:at_medicare/Resources/Public/javascript/scrollspy.min.js
+        50 = EXT:at_medicare/Resources/Public/javascript/custom.js
+    }
+
+    // Let's start fluid_styled_content
+    10 = FLUIDTEMPLATE
+    10 {
+        layoutRootPath = {$at_medicare.website.paths.layoutRootPath}
+        partialRootPath = {$at_medicare.website.paths.partialRootPath}
+        templateRootPath = {$at_medicare.website.paths.templateRootPath}
+
+        // Let's automatically choose backend layout and template
+        file.stdWrap.cObject = CASE
+        file.stdWrap.cObject {
+            key {
+                data = levelfield:-1, backend_layout_next_level, slide
+                override.field = backend_layout
+            }
+
+            default = TEXT
+            default.value = {$at_medicare.website.paths.templateRootPath}Default.html
+        }
+
+        settings < plugin.at_medicare.settings
+
+        // Generate menu with DataProcessing
+        dataProcessing {
+
+            // Main menu
+            101 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            101 {
+                levels = 5
+                special = directory
+                special.value = {$at_medicare.website.settings.main_menu}
+                expandAll = 1
+                includeSpacer = 1
+                as = MainMenu
+            }
+        }
+    }
+}
+
+#########################
+### GLOBAL LIB OBJECT ###
+#########################
+
+lib {
+    // Define default content
+    content = CONTENT
+    content < styles.content.get
+
+
+    scrolling = CONTENT
+    scrolling {
+        table = pages
+        select {
+            pidInList = {$at_medicare.website.settings.main_menu}
+            where = (doktype = 1 OR doktype = 3) AND nav_hide = 0
+            orderBy = sorting ASC
+        }
+        renderObj = COA
+        renderObj {
+            20 = CONTENT
+            20 {
+                table = tt_content
+                select {
+                    languageField = sys_language_uid
+                    pidInList.field = uid
+                    orderBy = sorting
+                    where = colPos = 0
+                }
+            }
+        }
+    }
+
+    headerContent < lib.content
+    headerContent.select.where = colPos = 0
+
+    footerLeft < lib.content
+    footerLeft.select.where = colPos = 1
+
+    footermid < lib.content
+    footermid.select.where = colPos = 2
+
+    footerRight < lib.content
+    footerRight.select.where = colPos = 3
+
+    footerLast < lib.content
+    footerLast.select.where = colPos = 4
+
+}
+
+# Form configuration
+plugin.tx_form.settings.yamlConfigurations {
+    100 = EXT:at_medicare/Configuration/Form/Setup.yaml
+}
+
+module.tx_form.settings.yamlConfigurations {
+    100 = EXT:at_medicare/Configuration/Form/Setup.yaml
+}

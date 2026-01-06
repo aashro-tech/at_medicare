@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+    <div class="container">
+        <f:if condition="{settings.logo_title}">
+            <a class="navbar-brand mx-auto d-lg-none" href="{MainMenu.data.url}">
+                {settings.logo_title}
+                <strong class="d-block">{settings.Subheader}</strong>
+            </a>
+        </f:if>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <f:for each="{MainMenu}" as="item" iteration="i">
+                    <f:if condition="{i.index} < 3">
+                        <li class="nav-item {f:if(condition: i.isFirst, then: 'active')}">
+                            <a class="nav-link" href="{item.data.url}">{item.title}</a>
+                        </li>
+                    </f:if>
+                </f:for>
+                <f:if condition="{settings.logo_title}">
+                    <a class="navbar-brand d-none d-lg-block" href="#">
+                        {settings.logo_title}
+                        <strong class="d-block">{settings.Subheader}</strong>
+                    </a>
+                </f:if>
+                <f:for each="{MainMenu}" as="item" iteration="i">
+                    <f:if condition="{i.index} > 2">
+                        <f:then>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{item.data.url}">{item.title}</a>
+                            </li>
+                        </f:then>
+                    </f:if>
+                </f:for>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,53 @@
+<f:asset.css identifier="inline-styles">
+    #timeline .align-items-start { align-items: flex-start; }
+    #timeline .justify-content-end { justify-content: flex-end; }
+    #timeline .py-4 { padding-top: 1.5rem;padding-bottom: 1.5rem; }
+    #timeline .timeline { position: relative; }
+    #timeline .timeline-nodes { position: relative;margin-bottom: 40px; }
+    #timeline .timeline-content {padding: 20px;border-radius: 6px; }
+    #timeline .timeline::before {content: "";display: block;position: absolute;top: 37px;left: 50%;width: 0;border-left: 1px solid #eaeaea;height: 85%;z-index: 1;transform: translateX(-50%); }
+    #timeline .timeline-icon { width: 32px; height: 32px; object-fit: contain;}
+    #timeline .timeline-icons { position: relative;}
+    #timeline .timeline-icons::before { content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 80px; background: #fff; border-radius: 50%; box-shadow: 0 10px 30px rgba(0,0,0,0.1); z-index: 1;}
+    #timeline .timeline-icon { position: relative; z-index: 2; width: 32px; height: 32px; object-fit: contain; display: block; margin: 24px auto; }
+    #timeline .timeline-icons::after {content: "";transform: translateX(-50%);width: 2px;height: 100%;background: black;}
+    #timeline .timeline-nodes:nth-child(2n) {flex-direction: row-reverse;}
+    #timeline .timeline-nodes {margin-top: 3rem !important;margin-bottom: 3rem !important;}
+    #timeline .timeline, .timeline-nodes {position: relative;}
+    #timeline .timeline-nodes:nth-child(2n) .timeline-date {text-align: right;}
+</f:asset.css>
+
+<section class="section-padding pb-0" id="timeline">
+    <div class="container">
+        <div class="row">
+            <f:if condition="{data.header}">
+                <h2 class="text-center mb-lg-5 mb-4">{data.header}</h2>
+            </f:if>
+            <f:if condition="{data.tx_mask_rptcontent}">
+                <div class="timeline">
+                    <f:for each="{data.tx_mask_rptcontent}" as="item">
+                        <div
+                            class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes {item.tx_mask_class}">
+                            <f:if condition="{item.tx_mask_timeline_details}">
+                                <div
+                                    class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
+                                    {item.tx_mask_timeline_details -> f:format.raw()}
+                                </div>
+                            </f:if>
+                            <f:for each="{item.tx_mask_timeline_icon}" as="file">
+                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                                    <f:image image="{file}" width="32" class="timeline-icon" />
+                                </div>
+                            </f:for>
+                            <f:if condition="{item.tx_mask_timeline_date}">
+                                <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
+                                    <f:format.date date="{item.tx_mask_timeline_date}" format="Y-m-j l" />
+                                </div>
+                            </f:if>
+                        </div>
+                    </f:for>
+                </div>
+            </f:if>
+        </div>
+    </div>
+</section>

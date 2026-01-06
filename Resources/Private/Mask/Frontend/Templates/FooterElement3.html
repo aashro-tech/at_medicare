@@ -1,0 +1,16 @@
+<f:if condition="{data.header}">
+    <h5 class="mb-lg-4 mb-3">{data.header}</h5>
+    <f:if condition="{data.tx_mask_smrpt}">
+        <ul class="social-icon">
+            <f:for each="{data.tx_mask_smrpt}" as="data_item">
+                <f:for each="{data_item.tx_mask_footer3_icon}" as="file">
+                    <li>
+                        <f:link.external uri="{file.Link}" target="_blank">
+                            <f:image image="{file}" class="social-icon-link" base64="true" width="18" height="27" />
+                        </f:link.external>
+                    </li>
+                </f:for>
+            </f:for>
+        </ul>
+    </f:if>
+</f:if>

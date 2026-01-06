@@ -1,0 +1,24 @@
+base: /
+languages:
+  -
+    title: English
+    enabled: true
+    languageId: 0
+    base: /
+    locale: en_US.UTF-8
+    hreflang: en-US
+    navigationTitle: English
+    flag: us
+rootPageId: 1
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    map:
+      /: 0
+      sitemap.xml: 1533906435
+routes:
+  -
+    route: robots.txt
+    type: staticText
+    content: "User-agent: *\r\nAllow: /\r\nDisallow: /typo3/\r\nDisallow: /typo3conf/\r\nAllow: /_assets/\r\nAllow: /typo3temp/\r\nSitemap: https://goodfoofdist.ddev.site/sitemap.xml"
+websiteTitle: Goid

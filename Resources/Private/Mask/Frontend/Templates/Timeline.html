@@ -1,0 +1,34 @@
+<section class="section-padding pb-0" id="timeline">
+    <div class="container">
+        <div class="row">
+            <f:if condition="{data.header}">
+                <h2 class="text-center mb-lg-5 mb-4">{data.header}</h2>
+            </f:if>
+            <f:if condition="{data.tx_mask_rptcontent}">
+                <div class="timeline">
+                    <f:for each="{data.tx_mask_rptcontent}" as="item">
+                        <div
+                            class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes {item.tx_mask_class}">
+                            <f:if condition="{item.tx_mask_timeline_details}">
+                                <div
+                                    class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
+                                    {item.tx_mask_timeline_details -> f:format.html()}
+                                </div>
+                            </f:if>
+                            <f:for each="{item.tx_mask_timeline_icon}" as="file">
+                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                                    <f:image image="{file}" base64="true" width="32" class="timeline-icon" />
+                                </div>
+                            </f:for>
+                            <f:if condition="{item.tx_mask_timeline_date}">
+                                <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
+                                    <f:format.date date="{item.tx_mask_timeline_date}" format="Y-m-j l" />
+                                </div>
+                            </f:if>
+                        </div>
+                    </f:for>
+                </div>
+            </f:if>
+        </div>
+    </div>
+</section>

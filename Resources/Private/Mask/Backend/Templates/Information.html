@@ -1,0 +1,42 @@
+<f:asset.css identifier="inline-styles">
+    #about .section-padding {padding: 80px 0;}
+    #about .d-flex {display: flex;}
+    #about .justify-content-center {justify-content: center;}
+    #about .align-items-center {align-items: center;}
+    #about .bg-white {background-color: #ffffff;}
+    #about .shadow-lg {box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);}
+    #about .featured-circle {width: 220px;height: 220px;border-radius: 50%;text-align: center;padding: 20px;}
+    #about .gallery {padding-bottom: 80px;}
+    #about .galleryImage {width: 100%;height: auto;display: block;}
+    #about .img-fluid {max-width: 100%;height: auto;}
+</f:asset.css>
+
+<section class="section-padding" id="about">
+    <div class="container">
+        <div class="row">
+            <f:if condition="{data.tx_mask_info_desc}">
+                <div class="col-lg-6 col-md-6 col-6">
+                    {data.tx_mask_info_desc -> f:format.raw()}
+                </div>
+            </f:if>
+            <f:if condition="{data.tx_mask_info_time_period}">
+                <div class="col-lg-4 col-md-5 col-6 ">
+                    <div class="featured-circle bg-white shadow-lg d-flex justify-content-center align-items-center">
+                        {data.tx_mask_info_time_period -> f:format.raw()}
+                    </div>
+                </div>
+            </f:if>
+        </div>
+    </div>
+</section>
+<section class="gallery">
+    <div class="container">
+        <div class="row">
+            <f:for each="{data.image}" as="img">
+                <div class="col-lg-6 col-6 ">
+                    <f:image image="{img}" width="" height=""  class="img-fluid galleryImage" />
+                </div>
+            </f:for>
+        </div>
+    </div>
+</section>

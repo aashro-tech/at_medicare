@@ -1,0 +1,45 @@
+{
+    "name": "aashro/at-medicare",
+    "type": "typo3-cms-extension",
+    "description": "A professional TYPO3 healthcare template with appointment booking, doctor profiles, timelines, and testimonials—ideal for clinics and medical services.",
+    "keywords": [
+      "TYPO3 CMS",
+      "Medicare",
+      "Aashro"
+    ],
+    "authors": [
+        {
+            "name": "Aashro Tech",
+            "email": "info@aashro.com",
+            "role": "Developer",
+            "homepage": "http://www.aashro.com/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/aashro-tech/at_medicare/issues"
+    },
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-core": "^13.0",
+        "mask/mask": "^9.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AASHRO\\AtMedicare\\": "Classes"
+        }
+    },
+    "replace": {
+        "typo3-ter/at-medicare": "self.version"
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/public",
+            "extension-key": "at_medicare"
+        }
+    }
+}

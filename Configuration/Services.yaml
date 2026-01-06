@@ -1,0 +1,10 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  AASHRO\AtMedicare\EventListener\PackageActivationListener:
+    tags:
+      - name: event.listener
+        identifier: 'package.activation'

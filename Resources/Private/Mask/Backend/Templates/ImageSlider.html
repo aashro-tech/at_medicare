@@ -1,0 +1,82 @@
+<f:asset.css identifier="inline-styles">
+    #hero .d-flex {display: flex;}
+    #hero .flex-column {flex-direction: column;}
+    #hero .flex-wrap {flex-wrap: wrap;}
+    #hero .justify-content-center {justify-content: center;}
+    #hero .align-items-center {align-items: center;}
+    #hero .img-fluid {max-width: 100%;height: auto;display: block;}.hero {position: relative;overflow: hidden;}.heroText {background: #FFF;position: absolute;z-index: 2;bottom: 0;right: 0;padding: 1.5rem 2.5rem;width: 50%;}.carousel {position: relative;}
+    #hero .carousel-inner {position: relative;width: 100%;overflow: hidden;}
+    #hero .carousel-item {display: none;}
+    #hero .carousel-item.active {display: block;}.carousel-fade .carousel-item {opacity: 0;transition: opacity 0.6s ease-in-out;}
+    #hero .carousel-fade .carousel-item.active {opacity: 1;}.heroLinks {margin-top: 1.5rem;}
+    #hero .custom-link {text-decoration: none;font-weight: 600;}
+    #hero .phone-link {text-decoration: none;color: inherit;}
+    #hero .contact-phone i {margin-right: 6px;}.animated {position: relative;}
+    #hero .animated-info {display: inline-block;vertical-align: top;min-width: 250px;position: relative;}
+    #hero .animated-item {color: blue;}
+    #hero .animated-item {display: block;color: blue;opacity: 0;overflow: hidden;position: absolute;top: 0;right: 0;left: 0;animation: BottomTotop 6s linear infinite 0s;}
+    #hero .animated-item:nth-child(2n+2) {animation-delay: 2s;}
+    #hero .animated-item:nth-child(3n+3) {animation-delay: 4s;}
+    @keyframes BottomTotop {0% {opacity: 0;}5% {opacity: 0;transform: translateY(5px);}10% {opacity: 1;transform: translateY(0px);}25% {opacity: 1;transform: translateY(0px);}30% {opacity: 0;transform: translateY(5px);}80% {opacity: 0;}100% {opacity: 0;}}
+</f:asset.css>
+
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <f:for each="{data.image}" as="img" iteration="i">
+                            <f:if condition="{i.isFirst}">
+                                <f:then>
+                                    <div class="carousel-item active">
+                                        <f:image image="{img}" width="1300" class="img-fluid" />
+                                    </div>
+                                </f:then>
+                                <f:else>
+                                    <div class="carousel-item">
+                                        <f:image image="{img}" width="1300" class="img-fluid" />
+                                    </div>
+                                </f:else>
+                            </f:if>
+                        </f:for>
+                    </div>
+                </div>
+
+                <f:if condition="{data.tx_mask_hero_text}">
+                    <div class="heroText d-flex flex-column justify-content-center">
+                        <h1 class="mt-auto mb-2">{data.tx_mask_hero_text}
+                            <div class="animated-info">
+                                <f:if condition="{data.tx_mask_textanimation}">
+                                    <f:for each="{data.tx_mask_textanimation}" as="data_item">
+                                        <f:if condition="{data_item.tx_mask_animatedtext}">
+                                            <span class="animated-item">{data_item.tx_mask_animatedtext}</span>
+                                        </f:if>
+                                    </f:for>
+                                </f:if>
+                            </div>
+                        </h1>
+                        <f:if condition="{data.tx_mask_desc}">
+                            <f:format.raw>{data.tx_mask_desc}</f:format.raw>
+                        </f:if>
+                        <f:if condition="{data.tx_mask_linklabel}">
+                            <div class="heroLinks d-flex flex-wrap align-items-center">
+                                {data.tx_mask_linklabel}
+                                
+                                <f:if condition="{data.tx_mask_phno}">
+                                    <p class="contact-phone mb-0"><i class="bi-phone"></i>
+                                        
+                                         {data.tx_mask_phno}
+                                       
+                                    </p>
+                                </f:if>
+                            </div>
+                        </f:if>
+                    </div>
+                </f:if>
+
+            </div>
+        </div>
+    </div>
+</section>

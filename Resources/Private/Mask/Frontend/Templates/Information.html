@@ -1,0 +1,29 @@
+<section class="section-padding" id="about">
+    <div class="container">
+        <div class="row">
+            <f:if condition="{data.tx_mask_info_desc}">
+                <div class="col-lg-6 col-md-6 col-12">
+                    {data.tx_mask_info_desc -> f:format.html()}
+                </div>
+            </f:if>
+            <f:if condition="{data.tx_mask_info_time_period}">
+                <div class="col-lg-4 col-md-5 col-12 mx-auto">
+                    <div class="featured-circle bg-white shadow-lg d-flex justify-content-center align-items-center">
+                        {data.tx_mask_info_time_period -> f:format.html()}
+                    </div>
+                </div>
+            </f:if>
+        </div>
+    </div>
+</section>
+<section class="gallery">
+    <div class="container">
+        <div class="row">
+            <f:for each="{data.image}" as="img">
+                <div class="col-lg-6 col-6 ">
+                    <f:image image="{img}" width="649" class="img-fluid galleryImage" />
+                </div>
+            </f:for>
+        </div>
+    </div>
+</section>

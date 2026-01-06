@@ -1,0 +1,69 @@
+
+.timeline-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.timeline-icons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+.timeline-icon {
+    position: relative;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+    margin: 24px auto; /* centers inside circle */
+}
+
+.timeline-icons::after {
+    content: "";
+    
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #e5e5e5;
+}
+
+.social-icon-link{
+    filter: grayscale(90%);
+}
+.social-icon-link:hover{
+    filter: none;
+}
+footer{
+  color: #212529;
+}
+
+.timeline-nodes:first-child {
+    margin-top: 5px !important;
+}
+.timeline-nodes{
+  
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+.timeline-nodes:last-child {
+    margin-bottom: 5px !important;
+}
+label {
+  display: none;
+}
+
+div#appointment-57{
+  text-align: center;
+  padding: 5rem;
+  font-size: large;
+}

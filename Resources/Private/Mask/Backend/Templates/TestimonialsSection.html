@@ -1,0 +1,61 @@
+<f:asset.css identifier="reviews-inline-styles">
+    #reviews .reviews-carousel {display: flex;justify-content: center;padding: 20px;}
+    #reviews .reviews-carousel .reviews-thumb {display: none !important;}
+    #reviews .reviews-carousel .reviews-thumb:first-child {display: block !important;width: 50%;background-color: black;color: white;padding: 20px;border-radius: 10px;}
+    #reviews .reviews-image{width: 50px;border-radius: 50%;}
+    #reviews .reviews-stars {width: 100%;margin-bottom: 10px;color: #f7c948;}
+    #reviews figcaption {display: flex;align-items: center;}
+    #reviews figcaption strong {font-weight: 600;padding: 5px;}
+    #reviews figcaption span {font-size: 0.875rem;}
+</f:asset.css>
+
+<section class="section-padding pb-0" id="reviews">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <f:if condition="{data.header}">
+          <h2 class="text-center mb-lg-5 mb-4">{data.header}</h2>
+        </f:if>
+
+        <f:if condition="{data.tx_mask_testimonial}">
+          <div class="owl-carousel reviews-carousel">
+
+            <f:for each="{data.tx_mask_testimonial}" as="item">
+              <figure class="reviews-thumb d-flex flex-wrap align-items-center">
+
+                <div class="reviews-stars">
+                    <f:alias map="{num:{0:1,1:2,2:3,3:4,4:5}}">
+                        <f:for each="{num}" as="index" iteration="i">
+                            <f:if condition="{i.cycle} <= {item.tx_mask_stars}">
+                                <f:then>
+                                    <i class="bi-star-fill"></i>
+                                </f:then>
+                                <f:else>
+                                    <i class="bi-star"></i>
+                                </f:else>
+                            </f:if>
+                        </f:for>
+                    </f:alias>
+                </div>
+
+                <f:if condition="{item.tx_mask_review}">
+                  {item.tx_mask_review -> f:format.raw()}
+                </f:if>
+                <figcaption class="ms-4">
+                <f:image image="{item.tx_mask_image.0}"
+                  class="img-fluid reviews-image" />
+                  <strong>{item.tx_mask_image.0.title}</strong>
+                  <span class="text-muted">
+                    {item.tx_mask_image.0.description}
+                  </span>
+                </figcaption>
+              </figure>
+            </f:for>
+          </div>
+        </f:if>
+
+      </div>
+    </div>
+  </div>
+</section>

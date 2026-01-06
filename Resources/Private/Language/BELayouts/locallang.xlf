@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-09-29T11:30:00Z" product-name="at_medicare">
+		<header/>
+		<body>
+			<trans-unit id="layout.home">
+        		<source>Home</source>
+    		</trans-unit>
+    		<trans-unit id="palette.access.column.normal">
+        		<source>Normal</source>
+    		</trans-unit>
+			<trans-unit id="column.left">
+        		<source>Left</source>
+    		</trans-unit>
+    		<trans-unit id="column.center">
+        		<source>Center</source>
+    		</trans-unit>
+    		<trans-unit id="column.right">
+        		<source>Rights</source>
+    		</trans-unit>
+		</body>
+	</file>
+</xliff>

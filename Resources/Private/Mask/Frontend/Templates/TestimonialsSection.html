@@ -1,0 +1,43 @@
+<section class="section-padding pb-0" id="reviews">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <f:if condition="{data.header}">
+                    <h2 class="text-center mb-lg-5 mb-4">{data.header}</h2>
+                </f:if>
+                <f:if condition="{data.tx_mask_testimonial}">
+                    <div class="owl-carousel reviews-carousel">
+                        <f:for each="{data.tx_mask_testimonial}" as="item">
+                            <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
+                                <div class="reviews-stars">
+                                    <f:alias map="{num:{0:1,1:2,2:3,3:4,4:5}}">
+                                        <f:for each="{num}" as="index" iteration="i">
+                                            <f:if condition="{i.cycle} <= {item.tx_mask_stars}">
+                                                <f:then>
+                                                    <i class="bi-star-fill"></i>
+                                                </f:then>
+                                                <f:else>
+                                                    <i class="bi-star"></i>
+                                                </f:else>
+                                            </f:if>
+                                        </f:for>
+                                    </f:alias>
+                                </div>
+                                <f:if condition="{item.tx_mask_review}">
+                                    {item.tx_mask_review -> f:format.html()}
+                                </f:if>
+                                <f:image image="{item.tx_mask_image.0}" width="70" class="img-fluid reviews-image" />
+                                <f:if condition="{item.tx_mask_image.0.title}">
+                                    <figcaption class="ms-4">
+                                        <strong>{item.tx_mask_image.0.title}</strong>
+                                        <span class="text-muted">{item.tx_mask_image.0.description}</span>
+                                    </figcaption>
+                                </f:if>
+                            </figure>
+                        </f:for>
+                    </div>
+                </f:if>
+            </div>
+        </div>
+    </div>
+</section>
