@@ -157,6 +157,9 @@ INSERT INTO `tx_mask_testimonial` (`uid`, `pid`, `tstamp`, `crdate`, `deleted`, 
 (8,	6,	1767336586,	1767252283,	0,	0,	0,	0,	'',	4,	0,	0,	0,	0,	NULL,	4,	'{\"editlock\":\"\",\"endtime\":\"\",\"fe_group\":\"\",\"hidden\":\"\",\"starttime\":\"\",\"tx_mask_image\":\"\",\"tx_mask_review\":\"\",\"tx_mask_stars\":\"\"}',	0,	0,	0,	0,	1,	'3',	63,	'tt_content',	'<p class=\"text-primary d-block mt-2 mb-0 w-100\"><strong>Best Advices</strong></p>\r\n<p class=\"reviews-text w-100\">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>');
 
 INSERT INTO `tx_mask_textanimation` (`uid`, `pid`, `tstamp`, `crdate`, `deleted`, `hidden`, `starttime`, `endtime`, `fe_group`, `sorting`, `editlock`, `sys_language_uid`, `l10n_parent`, `l10n_source`, `l10n_state`, `t3_origuid`, `l10n_diffsource`, `t3ver_oid`, `t3ver_wsid`, `t3ver_state`, `t3ver_stage`, `tx_mask_animatedtext`, `parentid`, `parenttable`) VALUES
-(4,	2,	1767595871,	1767252198,	0,	0,	0,	0,	'',	1,	0,	0,	0,	0,	NULL,	1,	'{\"hidden\":\"\"}',	0,	0,	0,	0,	'lives',	60,	'tt_content'),
-(5,	2,	1767595871,	1767252198,	0,	0,	0,	0,	'',	2,	0,	0,	0,	0,	NULL,	2,	'{\"hidden\":\"\"}',	0,	0,	0,	0,	'health',	60,	'tt_content'),
-(6,	2,	1767595871,	1767252198,	0,	0,	0,	0,	'',	3,	0,	0,	0,	0,	NULL,	3,	'{\"hidden\":\"\"}',	0,	0,	0,	0,	'days',	60,	'tt_content');
+(4,	2,	1767595871,	1767252198,	0,	0,	0,	0,	'',	513,	0,	0,	0,	0,	NULL,	1,	'{\"hidden\":\"\"}',	0,	0,	0,	0,	'lives',	60,	'tt_content'),
+(5,	2,	1767595871,	1767252198,	0,	0,	0,	0,	'',	514,	0,	0,	0,	0,	NULL,	2,	'{\"hidden\":\"\"}',	0,	0,	0,	0,	'health',	60,	'tt_content'),
+(6,	2,	1767595871,	1767252198,	0,	0,	0,	0,	'',	515,	0,	0,	0,	0,	NULL,	3,	'{\"hidden\":\"\"}',	0,	0,	0,	0,	'days',	60,	'tt_content'),
+(7,	2,	1767683298,	1767683275,	0,	0,	0,	0,	'',	1,	0,	0,	0,	0,	NULL,	0,	'{\"editlock\":\"\",\"endtime\":\"\",\"fe_group\":\"\",\"hidden\":\"\",\"starttime\":\"\",\"tx_mask_animatedtext\":\"\"}',	0,	0,	0,	0,	'health',	76,	'tt_content'),
+(8,	2,	1767683298,	1767683275,	0,	0,	0,	0,	'',	2,	0,	0,	0,	0,	NULL,	0,	'{\"editlock\":\"\",\"endtime\":\"\",\"fe_group\":\"\",\"hidden\":\"\",\"starttime\":\"\",\"tx_mask_animatedtext\":\"\"}',	0,	0,	0,	0,	'days',	76,	'tt_content'),
+(9,	2,	1767683298,	1767683275,	0,	0,	0,	0,	'',	3,	0,	0,	0,	0,	NULL,	0,	'{\"editlock\":\"\",\"endtime\":\"\",\"fe_group\":\"\",\"hidden\":\"\",\"starttime\":\"\",\"tx_mask_animatedtext\":\"\"}',	0,	0,	0,	0,	'lives',	76,	'tt_content');
