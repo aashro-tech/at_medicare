@@ -62,8 +62,12 @@ label {
   display: none;
 }
 
-div#appointment-57{
+div#bookanappointment-9{
   text-align: center;
   padding: 5rem;
   font-size: large;
+}
+
+.form-group {
+  margin-bottom: -16px;
 }

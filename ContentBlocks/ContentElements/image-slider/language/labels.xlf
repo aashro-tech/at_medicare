@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-06-27T11:44:48+00:00" product-name="mask/image-slider">
+    <header/>
+    <body>
+      <trans-unit id="title">
+        <source>Hero section </source>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>full size Image slider with text</source>
+      </trans-unit>
+      <trans-unit id="image.label">
+        <source>Slider images</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_hero_text.label">
+        <source>Simple text</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_hero_text.description">
+        <source>Simple text at bottom-right corner</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_textanimation.label">
+        <source>Animated text</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_textanimation.description">
+        <source>Animated text that changes frequently</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_textanimation.tx_mask_animatedtext.label">
+        <source>Text</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_desc.label">
+        <source>Description</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_desc.description">
+        <source>Detail description at the bottom-right corner</source>
+      </trans-unit>
+      <trans-unit id="palettes.tx_mask_2a7175a071c4.label">
+        <source>Palette</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_linklabel.label">
+        <source>Link label</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_url.label">
+        <source>Link</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_phno.label">
+        <source>Contact no</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

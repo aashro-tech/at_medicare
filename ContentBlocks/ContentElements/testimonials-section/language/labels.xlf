@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-06-27T11:44:48+00:00" product-name="mask/testimonials-section">
+    <header/>
+    <body>
+      <trans-unit id="title">
+        <source>Testimonials Section</source>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Testimonial Section</source>
+      </trans-unit>
+      <trans-unit id="header.label">
+        <source>Testimonial Heading</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_testimonial.label">
+        <source>Testimonial Content</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_testimonial.description">
+        <source>First name as Image title and Last name as Image description</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_testimonial.tx_mask_stars.label">
+        <source>Stars</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_testimonial.tx_mask_stars.description">
+        <source>Select rates for our services</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_testimonial.tx_mask_stars.items.1.label">
+        <source>1</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_testimonial.tx_mask_stars.items.2.label">
+        <source>2</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_testimonial.tx_mask_stars.items.3.label">
+        <source>3</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_testimonial.tx_mask_stars.items.4.label">
+        <source>4</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_testimonial.tx_mask_stars.items.5.label">
+        <source>5</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_testimonial.tx_mask_review.label">
+        <source>Reviews</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_testimonial.tx_mask_review.description">
+        <source>Detail reviews by patients</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_testimonial.tx_mask_image.label">
+        <source>Patient&#039;s image</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_testimonial.tx_mask_image.description">
+        <source>Enter the patient’s name in the image title and the surname in the image description (caption).</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

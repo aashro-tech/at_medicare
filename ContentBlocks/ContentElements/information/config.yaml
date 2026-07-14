@@ -1,0 +1,40 @@
+name: aashro/information
+typeName: mask_information
+prefixFields: false
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Links
+fields:
+  -
+    type: Textarea
+    identifier: tx_mask_info_desc
+    label: Details
+    description: 'Describe about the doctor'
+    enableRichtext: 1
+    required: 1
+    richtextConfiguration: full
+  -
+    type: Textarea
+    identifier: tx_mask_info_time_period
+    label: 'Time period'
+    description: 'Specified time period'
+    enableRichtext: 1
+    richtextConfiguration: full
+  -
+    type: File
+    identifier: image
+    useExistingField: true
+    label: Gallery
+    appearance:
+      elementBrowserEnabled: 1
+      enabledControls:
+        delete: 1
+        dragdrop: 1
+        hide: 1
+        info: 1
+        localize: 1
+        sort: 0
+      fileUploadAllowed: 1
+      useSortable: 1
+    minitems: '1'
+    allowed: common-image-types

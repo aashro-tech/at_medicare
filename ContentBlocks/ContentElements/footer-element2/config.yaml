@@ -1,0 +1,15 @@
+name: aashro/footer-element2
+typeName: mask_footer_element2
+prefixFields: false
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Links
+fields:
+  -
+    type: Textarea
+    identifier: tx_mask_footer2_element
+    label: Address
+    description: 'Describe the address of clinic'
+    enableRichtext: 1
+    required: 1
+    richtextConfiguration: full

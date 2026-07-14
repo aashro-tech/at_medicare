@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-06-27T11:44:48+00:00" product-name="mask/footer-element3">
+    <header/>
+    <body>
+      <trans-unit id="title">
+        <source>Footer_socials</source>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Footer socials</source>
+      </trans-unit>
+      <trans-unit id="header.label">
+        <source>Heading</source>
+      </trans-unit>
+      <trans-unit id="header.description">
+        <source>Heading for social media section</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_smrpt.label">
+        <source>Social Media Repeat</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_smrpt.tx_mask_footer3_icon.label">
+        <source>Social media Icons</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

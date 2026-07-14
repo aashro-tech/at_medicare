@@ -1,0 +1,82 @@
+name: aashro/image-slider
+typeName: mask_image_slider
+prefixFields: false
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Links
+fields:
+  -
+    type: File
+    identifier: image
+    useExistingField: true
+    label: 'Slider images'
+    appearance:
+      elementBrowserEnabled: 1
+      enabledControls:
+        delete: 1
+        dragdrop: 1
+        hide: 1
+        info: 1
+        localize: 1
+        sort: 0
+      fileUploadAllowed: 1
+      useSortable: 1
+    minitems: '1'
+    allowed: common-image-types
+  -
+    type: Text
+    identifier: tx_mask_hero_text
+    label: 'Simple text'
+    description: 'Simple text at bottom-right corner'
+    required: 1
+  -
+    type: Collection
+    identifier: tx_mask_textanimation
+    label: 'Animated text'
+    description: 'Animated text that changes frequently'
+    appearance:
+      enabledControls:
+        delete: 1
+        dragdrop: 1
+        hide: 1
+        info: 1
+        localize: 1
+        new: 1
+        sort: 1
+      levelLinksPosition: top
+      showAllLocalizationLink: 1
+      showNewRecordLink: 1
+      showPossibleLocalizationRecords: 1
+      useSortable: 1
+    foreign_field: parentid
+    foreign_sortby: sorting
+    fields:
+      -
+        type: Text
+        identifier: tx_mask_animatedtext
+        label: Text
+  -
+    type: Textarea
+    identifier: tx_mask_desc
+    label: Description
+    description: 'Detail description at the bottom-right corner'
+    enableRichtext: 1
+    required: 0
+    richtextConfiguration: full
+  -
+    type: Palette
+    identifier: tx_mask_2a7175a071c4
+    label: Palette
+    fields:
+      -
+        type: Text
+        identifier: tx_mask_linklabel
+        label: 'Link label'
+      -
+        type: Link
+        identifier: tx_mask_url
+        label: Link
+  -
+    type: Text
+    identifier: tx_mask_phno
+    label: 'Contact no'

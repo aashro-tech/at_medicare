@@ -1,2 +1,1 @@
-# Includes Page Configuration
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:at_medicare/Configuration/TypoScript/Page" extensions="typoscript">
+@import 'EXT:at_medicare/Configuration/Sets/AtMedicare/Page/page.typoscript'

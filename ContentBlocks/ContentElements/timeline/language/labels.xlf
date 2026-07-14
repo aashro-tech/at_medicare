@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-06-27T11:44:48+00:00" product-name="mask/timeline">
+    <header/>
+    <body>
+      <trans-unit id="title">
+        <source>Timeline</source>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Timeline Section</source>
+      </trans-unit>
+      <trans-unit id="header.label">
+        <source>Heading</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_rptcontent.label">
+        <source>Content</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_rptcontent.tx_mask_timeline_details.label">
+        <source>Timeline Details</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_rptcontent.tx_mask_timeline_details.description">
+        <source>Timeline heading and description</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_rptcontent.tx_mask_timeline_icon.label">
+        <source>Icon</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_rptcontent.tx_mask_timeline_icon.description">
+        <source>Timeline description icon</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_rptcontent.tx_mask_timeline_date.label">
+        <source>Date</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

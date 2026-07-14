@@ -15,7 +15,7 @@
                 <f:for each="{MainMenu}" as="item" iteration="i">
                     <f:if condition="{i.index} < 3">
                         <li class="nav-item {f:if(condition: i.isFirst, then: 'active')}">
-                            <a class="nav-link" href="{item.data.url}">{item.title}</a>
+                            <a class="nav-link" href="{item.link}">{item.title}</a>
                         </li>
                     </f:if>
                 </f:for>
@@ -29,7 +29,7 @@
                     <f:if condition="{i.index} > 2">
                         <f:then>
                             <li class="nav-item">
-                                <a class="nav-link" href="{item.data.url}">{item.title}</a>
+                                <a class="nav-link" href="{item.link}">{item.title}</a>
                             </li>
                         </f:then>
                     </f:if>

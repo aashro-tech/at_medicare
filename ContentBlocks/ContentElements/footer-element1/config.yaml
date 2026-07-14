@@ -1,0 +1,47 @@
+name: aashro/footer-element1
+typeName: mask_footer_element1
+prefixFields: false
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Links
+fields:
+  -
+    type: Text
+    identifier: tx_mask_title
+    label: Header
+    description: 'Header about time period'
+    required: 1
+  -
+    type: Collection
+    identifier: tx_mask_repeat
+    label: 'Date & Time'
+    description: 'Select date and time'
+    appearance:
+      enabledControls:
+        delete: 1
+        dragdrop: 1
+        hide: 1
+        info: 1
+        localize: 1
+        new: 1
+        sort: 1
+      levelLinksPosition: top
+      showAllLocalizationLink: 1
+      showNewRecordLink: 1
+      showPossibleLocalizationRecords: 1
+      useSortable: 1
+    foreign_field: parentid
+    foreign_sortby: sorting
+    fields:
+      -
+        type: Text
+        identifier: tx_mask_footer_days
+        label: Days
+        description: 'Enter days according to availability'
+        required: 1
+      -
+        type: Text
+        identifier: tx_mask_footer_time
+        label: Times
+        description: 'Enter times according to availability'
+        required: 1

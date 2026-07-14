@@ -1,0 +1,70 @@
+name: aashro/timeline
+typeName: mask_timeline
+prefixFields: false
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Links
+fields:
+  -
+    type: Text
+    identifier: header
+    useExistingField: true
+    label: Heading
+    required: 1
+  -
+    type: Collection
+    identifier: tx_mask_rptcontent
+    label: Content
+    appearance:
+      enabledControls:
+        delete: 1
+        dragdrop: 1
+        hide: 1
+        info: 1
+        localize: 1
+        new: 1
+        sort: 1
+      levelLinksPosition: top
+      showAllLocalizationLink: 1
+      showNewRecordLink: 1
+      showPossibleLocalizationRecords: 1
+      useSortable: 1
+    foreign_field: parentid
+    foreign_sortby: sorting
+    fields:
+      -
+        type: Textarea
+        identifier: tx_mask_timeline_details
+        label: 'Timeline Details'
+        description: 'Timeline heading and description'
+        enableRichtext: 1
+        required: 1
+        richtextConfiguration: full
+      -
+        type: File
+        identifier: tx_mask_timeline_icon
+        label: Icon
+        description: 'Timeline description icon'
+        appearance:
+          elementBrowserEnabled: 1
+          enabledControls:
+            delete: 1
+            dragdrop: 1
+            hide: 1
+            info: 1
+            localize: 1
+            sort: 0
+          fileUploadAllowed: 1
+          useSortable: 1
+        maxitems: '1'
+        minitems: '1'
+        allowed: common-image-types
+      -
+        type: DateTime
+        identifier: tx_mask_timeline_date
+        label: Date
+        dbType: date
+        format: date
+        range:
+          upper: 31-12-2025
+        required: 0

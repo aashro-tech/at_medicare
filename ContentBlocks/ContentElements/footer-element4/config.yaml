@@ -1,0 +1,14 @@
+name: aashro/footer-element4
+typeName: mask_footer_element4
+prefixFields: false
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Links
+fields:
+  -
+    type: Textarea
+    identifier: tx_mask_footer4_copyright
+    label: Copyrite
+    enableRichtext: 1
+    required: 1
+    richtextConfiguration: full

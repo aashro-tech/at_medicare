@@ -1,0 +1,52 @@
+name: aashro/footer-element3
+typeName: mask_footer_element3
+prefixFields: false
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Links
+fields:
+  -
+    type: Text
+    identifier: header
+    useExistingField: true
+    label: Heading
+    description: 'Heading for social media section'
+    required: 1
+  -
+    type: Collection
+    identifier: tx_mask_smrpt
+    label: 'Social Media Repeat'
+    appearance:
+      enabledControls:
+        delete: 1
+        dragdrop: 1
+        hide: 1
+        info: 1
+        localize: 1
+        new: 1
+        sort: 1
+      levelLinksPosition: top
+      showAllLocalizationLink: 1
+      showNewRecordLink: 1
+      showPossibleLocalizationRecords: 1
+      useSortable: 1
+    foreign_field: parentid
+    foreign_sortby: sorting
+    fields:
+      -
+        type: File
+        identifier: tx_mask_footer3_icon
+        label: 'Social media Icons'
+        appearance:
+          elementBrowserEnabled: 1
+          enabledControls:
+            delete: 1
+            dragdrop: 1
+            hide: 1
+            info: 1
+            localize: 1
+            sort: 0
+          fileUploadAllowed: 1
+          useSortable: 1
+        minitems: ''
+        allowed: common-image-types

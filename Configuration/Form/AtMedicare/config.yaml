@@ -1,0 +1,17 @@
+name: aashro/at-medicare
+label: 'My Custom Forms'
+priority: 200
+persistenceManager:
+  allowedExtensionPaths:
+    200: 'EXT:at_medicare/Resources/Private/Forms/'
+prototypes:
+  standard:
+    formElementsDefinition:
+      Form:
+        renderingOptions:
+          templateRootPaths:
+            20: 'EXT:at_medicare/Resources/Private/Extensions/Form/Templates/'
+          partialRootPaths:
+            20: 'EXT:at_medicare/Resources/Private/Extensions/Form/Partials/'
+          layoutRootPaths:
+            20: 'EXT:at_medicare/Resources/Private/Extensions/Form/Layouts/'  

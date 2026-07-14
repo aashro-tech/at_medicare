@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-06-27T11:44:48+00:00" product-name="mask/footer-element1">
+    <header/>
+    <body>
+      <trans-unit id="title">
+        <source>Footer_availability</source>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Footer availability</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_title.label">
+        <source>Header</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_title.description">
+        <source>Header about time period</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_repeat.label">
+        <source>Date &amp; Time</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_repeat.description">
+        <source>Select date and time</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_repeat.tx_mask_footer_days.label">
+        <source>Days</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_repeat.tx_mask_footer_days.description">
+        <source>Enter days according to availability</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_repeat.tx_mask_footer_time.label">
+        <source>Times</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_repeat.tx_mask_footer_time.description">
+        <source>Enter times according to availability</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

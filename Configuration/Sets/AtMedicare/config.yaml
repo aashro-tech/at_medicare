@@ -1,0 +1,5 @@
+name: aashro/at-medicare
+label: 'AT Medicare Site Package'
+
+dependencies:
+  - typo3/fluid-styled-content

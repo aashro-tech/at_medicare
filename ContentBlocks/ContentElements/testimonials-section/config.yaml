@@ -1,0 +1,102 @@
+name: aashro/testimonials-section
+typeName: mask_testimonials_section
+prefixFields: false
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Links
+fields:
+  -
+    type: Text
+    identifier: header
+    useExistingField: true
+    label: 'Testimonial Heading'
+    required: 1
+  -
+    type: Collection
+    identifier: tx_mask_testimonial
+    label: 'Testimonial Content'
+    description: 'First name as Image title and Last name as Image description'
+    appearance:
+      enabledControls:
+        delete: 1
+        dragdrop: 1
+        hide: 1
+        info: 1
+        localize: 1
+        new: 1
+        sort: 1
+      levelLinksPosition: top
+      showAllLocalizationLink: 1
+      showNewRecordLink: 1
+      showPossibleLocalizationRecords: 1
+      useSortable: 1
+    foreign_field: parentid
+    foreign_sortby: sorting
+    fields:
+      -
+        type: Select
+        identifier: tx_mask_stars
+        label: Stars
+        description: 'Select rates for our services'
+        fieldWizard:
+          selectIcons:
+            disabled: 1
+        items:
+          -
+            label: '1'
+            value: '1'
+            icon: ''
+            group: ''
+            description: ''
+          -
+            label: '2'
+            value: '2'
+            icon: ''
+            group: ''
+            description: ''
+          -
+            label: '3'
+            value: '3'
+            icon: ''
+            group: ''
+            description: ''
+          -
+            label: '4'
+            value: '4'
+            icon: ''
+            group: ''
+            description: ''
+          -
+            label: '5'
+            value: '5'
+            icon: ''
+            group: ''
+            description: ''
+        renderType: selectSingle
+      -
+        type: Textarea
+        identifier: tx_mask_review
+        label: Reviews
+        description: 'Detail reviews by patients'
+        enableRichtext: 1
+        required: 1
+        richtextConfiguration: full
+      -
+        type: File
+        identifier: tx_mask_image
+        label: "Patient's image"
+        description: 'Enter the patient’s name in the image title and the surname in the image description (caption).'
+        appearance:
+          elementBrowserEnabled: 1
+          enabledControls:
+            delete: 1
+            dragdrop: 1
+            hide: 1
+            info: 1
+            localize: 1
+            sort: 0
+          fileUploadAllowed: 1
+          useSortable: 1
+        maxitems: '1'
+        minitems: '1'
+        allowed: common-image-types

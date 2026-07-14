@@ -20,14 +20,16 @@
     },
     "license": "GPL-2.0-or-later",
     "require": {
-        "typo3/cms-core": "^13.0",
-        "mask/mask": "^9.0.0"
+        "typo3/cms-core": "^14.3",
+        "friendsoftypo3/content-blocks": "^2.0"
     },
+
     "autoload": {
         "psr-4": {
             "AASHRO\\AtMedicare\\": "Classes"
         }
     },
+
     "replace": {
         "typo3-ter/at-medicare": "self.version"
     },

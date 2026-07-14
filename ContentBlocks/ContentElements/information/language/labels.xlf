@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-06-27T11:44:48+00:00" product-name="mask/information">
+    <header/>
+    <body>
+      <trans-unit id="title">
+        <source>Information</source>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Information</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_info_desc.label">
+        <source>Details</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_info_desc.description">
+        <source>Describe about the doctor</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_info_time_period.label">
+        <source>Time period</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_info_time_period.description">
+        <source>Specified time period</source>
+      </trans-unit>
+      <trans-unit id="image.label">
+        <source>Gallery</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

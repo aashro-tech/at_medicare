@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = array (
   'title' => '[AASHRO] Medic Care TYPO3 Template',
   'description' => 'A professional TYPO3 healthcare template with appointment booking, doctor profiles, timelines, and testimonials—ideal for clinics and medical services.',
   'category' => 'templates',
-  'version' => '1.0.1',
+  'version' => '2.0.0',
   'state' => 'stable',
   'uploadfolder' => false,
   'clearcacheonload' => false,
@@ -25,8 +25,8 @@ $EM_CONF[$_EXTKEY] = array (
   array (
     'depends' => 
     array (
-      'typo3' => '13.0.0-13.99.99',
-      'mask' => '9.0.0-9.0.9',
+       'typo3' => '14.0.0-14.9.99',
+       'content_blocks' => '2.0.0-2.3.5',
     ),
     'conflicts' => 
     array (

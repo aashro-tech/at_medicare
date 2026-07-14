@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-06-27T11:44:48+00:00" product-name="mask/footer-element2">
+    <header/>
+    <body>
+      <trans-unit id="title">
+        <source>Footer_address</source>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Footer address</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_footer2_element.label">
+        <source>Address</source>
+      </trans-unit>
+      <trans-unit id="tx_mask_footer2_element.description">
+        <source>Describe the address of clinic</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
